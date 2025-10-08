@@ -1,136 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarjeta Digital - Abog. Florentín Céspedes Aguirre</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio XXI S.A.</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fa;
+      color: #1f1f1f;
+      text-align: center;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
 
-    .card {
-      width: 90%;
+    .container {
       max-width: 420px;
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      padding: 25px 20px;
-      text-align: center;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .logo img {
-      width: 110px;
-      margin-bottom: 15px;
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 18px;
-      color: #1a3c6e;
-      margin-bottom: 5px;
+      font-size: 2.2em; /* más grande */
+      margin-bottom: 6px;
+      color: #004080; /* azul corporativo */
+      text-transform: uppercase; /* todo en mayúscula */
+      letter-spacing: 1px;
     }
 
-    h2 {
-      font-size: 14px;
-      color: #6c757d;
+    .subtitle {
+      color: #555;
+      font-size: 0.85em; /* un poco más chico */
       margin-bottom: 25px;
-      font-weight: 500;
+      letter-spacing: 0.5px;
     }
 
     .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin: 10px 0;
-      padding: 12px;
+      display: block;
       text-decoration: none;
-      color: #fff;
-      background-color: #1a3c6e;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-
-    .link i {
-      font-size: 18px;
+      background: #004080;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 10px;
+      margin: 10px 0;
+      font-size: 1em;
+      transition: all 0.3s ease;
     }
 
     .link:hover {
-      background-color: #16345a;
+      background: #002a4e;
     }
 
     .footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #6c757d;
+      margin-top: 25px;
+      font-size: 0.9em;
+      color: #666;
     }
 
-    @media (max-width: 400px) {
-      h1 {
-        font-size: 17px;
-      }
-      h2 {
-        font-size: 13px;
-      }
-      .link {
-        font-size: 14px;
-        padding: 10px;
-      }
+    .footer a {
+      color: #004080;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="logo">
-      <img src="logo.png" alt="Logo Estudio XXI">
-    </div>
-    <h1>ABOG. FLORENTÍN CÉSPEDES AGUIRRE</h1>
-    <h2>ESTUDIO XXI S.A.</h2>
+  <div class="container">
+    <img src="logo.png" alt="Logo Estudio XXI S.A." class="logo" />
+    <h1>ESTUDIO XXI S.A.</h1>
+    <p class="subtitle">Legales | Impuestos | Demandas</p>
 
-    <!-- Contacto directo -->
-    <a href="tel:+595981443280" class="link">
-      <i class="fas fa-phone"></i> Llamar al +595 981 443 280
-    </a>
-    <a href="https://wa.me/595981443280" class="link">
-      <i class="fab fa-whatsapp"></i> Enviar WhatsApp
-    </a>
-
-    <!-- Redes sociales -->
-    <a href="https://www.facebook.com/share/1YmEHnFtXt/" class="link">
-      <i class="fab fa-facebook-f"></i> Facebook
-    </a>
-    <a href="https://www.instagram.com/estudioxxisa?igsh=dXZmbWlwZXM5cjB4" class="link">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-
-    <!-- Página web -->
-    <a href="https://www.estudioxxi.com.py/" class="link">
-      <i class="fas fa-globe"></i> Página Web
-    </a>
-
-    <!-- Ubicación -->
-    <a href="https://maps.app.goo.gl/GzLWXoEQZoRUpmQZA?g_st=aw" class="link">
-      <i class="fas fa-map-marker-alt"></i> Ubicación
-    </a>
+    <a class="link" href="https://www.instagram.com/estudioxxisa?igsh=dXZmbWlwZXM5cjB4" target="_blank">📸 Instagram</a>
+    <a class="link" href="https://www.facebook.com/share/1YmEHnFtXt/" target="_blank">📘 Facebook</a>
+    <a class="link" href="https://maps.app.goo.gl/GzLWXoEQZoRUpmQZA?g_st=aw" target="_blank">📍 Ubicación</a>
+    <a class="link" href="https://www.estudioxxi.com.py/" target="_blank">🌐 Página Web</a>
+    <a class="link" href="https://wa.me/595986644897" target="_blank">💬 WhatsApp</a>
+    <a class="link" href="tel:+59521608396" target="_blank">📞 Llamar (21) 608 396 / 661 041</a>
+    <a class="link" href="mailto:fcespedes@estudioxxi.com.py">✉️ Correo: fcespedes@estudioxxi.com.py</a>
 
     <div class="footer">
-      © 2025 Estudio XXI - Todos los derechos reservados
+      © 2025 Estudio XXI S.A. | Todos los derechos reservados
     </div>
   </div>
 </body>
 </html>
-
